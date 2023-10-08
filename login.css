@@ -1,0 +1,139 @@
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100&display=swap');
+
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins",sans-serif;
+ }
+
+ body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background:url(../images/login-home.jpg);
+    background-size: cover;
+    background-position: center;
+ }
+ .main-container{
+    width: 420px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, .2);
+    color: #27ae60;
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px 40px;
+ }
+ .main-container h1{
+    font-size: 36px;
+    text-align: center;
+ }
+ .main-container .input-box{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+ }
+ .input-box input{
+    width: 100%;
+    height: 100%;
+    background: #efefef;
+    border: none;
+    outline: none;
+    /* border: 2px solid rgba(255, 255, 255, .2); */
+    /* border-radius: 40px; */
+    font-size: 16px;
+    color: #8BC34A;
+    padding: 20px 45px 20px 20px;
+ }
+ .input-images {
+   position: relative;
+   bottom: 14px;
+   left: 20px;
+}
+ .input-box input::placeholder{
+    color: goldenrod;
+ }
+ .input-box i{
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+ }
+ .main-container .rem-forget{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: -15px 0 15px;
+ }
+ .rem-forget label input{
+    accent-color: white;
+    margin-right: 3px;
+ }
+ .rem-forget a{
+    color: white;
+    text-decoration: none;
+ }
+ .rem-forget a:hover{
+    text-decoration: underline;
+ }
+ .main-container .btn{
+    width: 100%;
+    height: 45px;
+    color: white;
+    border: none;
+    outline: none;
+    /* border-radius: 40px; */
+    box-shadow: 0 0 10px rgb(0, 0, 0,-1);
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #27ae60;
+ }
+ .main-container .btn:hover{
+   background-color: #fbb739;
+ }
+ .main-container .reg-link{
+    font-size: 14.5px;
+    text-align: center;
+    margin: 20px 0 15px;
+ }
+ .reg-link p a{
+    color: #FF5722;
+    text-decoration: none;
+    font-weight: 600;
+
+ }
+ .reg-link p a:hover{
+   color:#fa815c ;
+ }
+
+ .message{
+   position: sticky;
+   top:0;
+   max-width: 1200px;
+   margin:0 auto;
+   background-color: black;
+   padding:1rem;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   gap:1.5rem;
+   z-index: 10000;
+}
+
+.message span{
+   font-size: 1rem;
+   color:#27ae60;
+}
+
+.message i{
+   font-size: 1rem;
+   cursor: pointer;
+   color:red;
+}
+
+.message i:hover{
+   color:wheat;
+}
